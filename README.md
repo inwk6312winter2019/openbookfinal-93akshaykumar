@@ -58,9 +58,12 @@ You are given a code to talk to the APIC-EM sandbox controller in the files, cre
 The API-DOCS can be found at https://developer.cisco.com/site/apic-em/docs/api.gsp
 
 ### Objectives
-Modify get-network-hosts.py to display all the hosts with their names IP Addresses and MAC Addresses. [This should be done on the same file]
-Write a new function called getnetworkdevicecount that gets the count of network devices. (The API can be found under Inventory -> network-device -> count)
 [Create a newfile called task03.py and import create-ticket.py to achive this]
+
+1. Modify get-network-host.py to display return a dict that contains the hosts with their Names and IP Addresses tuple as keys and MAC Addresses as values. [This should be done on the same file]
+
+2. Write a new function called getnetworkdevicecount that gets the count of network devices. (The API can be found under Inventory -> network-device -> count)
+
 
 Use the controller at: https://sandboxapic.cisco.com/
 
