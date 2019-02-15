@@ -10,7 +10,7 @@ Welcome to your final programming quiz
   - Use git add, commit and push to send the code back. 
   - Don't forget to add user name and email on git. 
   - You are allowed to use any form of searching and documentation reading and book reading is promoted
-  - Each task is to be saved as a individual python file with the name task0A.py, where A is the sub-tasknumber and 0 is the number tasknumber.
+  - Each task is to be saved as a individual python file with the name task0A.py, where A is the sub-tasknumber and 0 is the tasknumber.
   - You cannot talk to your other people or ask for help!
 
 
