@@ -61,15 +61,31 @@ response = requests.get(url, headers=header, verify=False)
 
 # json.dumps serializes the json into a string and allows us to
 # print the response in a 'pretty' format with indentation etc.
+
+
+# Taken Id as name
 print ("Hosts = ")
 print (json.dumps(response.json(), indent=4, separators=(',', ': ')))
 
 r_resp=response.json()
 host_dic={}
+id_list=[]
 for item in r_resp['response']:
+     id_list.append(item['id'])
      tup=(item['id'],item['hostIp'])
      host_dic[tup]=item['hostMac']
      
-
 print("The Host details are::::",host_dic)   
+
+#=====================================================================
+
+def getnetworkdevicecount(id_list):
+    for id1 in id_list:
+        url = "https://" + controller + "/api/v1/GET /discovery/"+id1+"/network-device/count"
+        header = {"content-type": "application/json", "X-Auth-Token":ticket}
+        response = requests.get(url, headers=header, verify=False)
+        print('The Network Count for the Devices wit id::'+id1+"::::",response.text)
+    
+
+getnetworkdevicecount(id_list)
 #print(r_resp["response"][0]["hostIp"])
