@@ -67,5 +67,5 @@ The API-DOCS can be found at https://developer.cisco.com/site/apic-em/docs/api.g
 
 Use the controller at: https://sandboxapic.cisco.com/
 
-### Max time: 3 hours!
+### Max time: 2 hours!
 
