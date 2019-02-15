@@ -84,6 +84,7 @@ def getnetworkdevicecount(id_list):
         url = "https://" + controller + "/api/v1/GET /discovery/"+id1+"/network-device/count"
         header = {"content-type": "application/json", "X-Auth-Token":ticket}
         response = requests.get(url, headers=header, verify=False)
+        print(response.status_code)
         print('The Network Count for the Devices wit id::'+id1+"::::",response.text)
     
 
